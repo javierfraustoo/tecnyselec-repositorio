@@ -23,7 +23,7 @@
 /* HEADER */
 
 .base {
-    background-color: #003566;
+    background-color: #dedede;
     display: flex;
     gap: 15px;
     padding: 20px;
@@ -40,22 +40,24 @@
 }
 
 .paginas li a{
-    color: white;
+    color: black;
     text-decoration: none;
     list-style: none;
 }
 
 .paginas li a:hover {
-    color: #ffc300;
+    color:white;
+
+
 }
 
 /* BODY INTRO*/
 
 .intro {
-    background-color: #ffc300;
+    background-color: black;
     display: flex;
-    gap: 15px;
-    padding: 20px;
+    gap: 0px;
+    padding: 0px;
     justify-content: center;
     margin: 0;
     align-items: center;
@@ -82,7 +84,7 @@
 
 /* FOOTER */
 .footer {
-    background-color: #003566;
+    background-color: #dedede;
     display: flex;
     gap: 15px;
     padding: 20px;
@@ -99,7 +101,7 @@
 }
 
 .redes li a{
-    color: white;
+    color: black;
     text-decoration: none;
     list-style: none;
 }
