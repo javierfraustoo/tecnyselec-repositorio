@@ -1,161 +1,90 @@
 * {
-    margin: 0;
+    font-family: 'Poppins';
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    }
-
-
-    /* #003566 AZUL */
-    /* #ffc300 AMARILLO */
-
-
-/* ESTRUCTURA DE LA PÁGINA*/
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(3, auto);
-}
-
-/* HEADER */
-
-.base {
-    background-color: #003566;
-    display: flex;
-    gap: 15px;
-    padding: 20px;
-    justify-content: space-between;
     margin: 0;
-    align-items: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.paginas {
-    display: flex;
-    gap: 15px;
-    text-decoration: none;
-    list-style: none;
-    align-content: center;
 }
 
-.paginas li a{
-    color: white;
-    text-decoration: none;
-    list-style: none;
+body {
+    background-color: white;
 }
 
-.paginas li a:hover {
-    color: #ffc300;
+.bgNav {
+    background-color: #dedede;
 }
 
-/* BODY INTRO*/
-
-.intro {
-    background-color: #ffc300;
-    display: flex;
-    gap: 0px;
-    padding: 0px;
-    justify-content: center;
-    margin: 0;
-    align-items: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.botonSolicitarCotizacion {
-    display: flex;
-    justify-content: center;
-    animation: efecto-entrada2;
-    animation-duration: 1.5s;
-    animation-delay: 0s;
-
-}
-
-.fotoIntro {
-    justify-content: center;
-}
-
-.textoIntro {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    text-align: center;
-    font-size: 20px;
+.colorTextNav a {
     color: black;
-    padding: 7px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.boxAnimadoIntro {
-    animation-name: efecto-entrada;
-    animation-duration: 1.5s;
-    animation-delay: 0s;
-    background-color: #003566;
-    color: white;
+.alignTextNav ul li{
     text-align: center;
+}
+
+.quienesSomos {
+    text-align: center;
+    margin: 5px;
+    padding: 5%;
+}
+
+.quienesSomos p {
     font-size: 25px;
-    padding: 5px;
+}
+.quienesSomos h1 {
+    font-weight: bold;
+    font-size: 40px;
 }
 
-/* ANIMACIONES */
+.row {
+    padding: 2%;
+    margin: 10px;
+}
 
-@keyframes efecto-entrada {
-    0% {
-        margin-left: 100%;
-        width: 300%;
-    }
-    100% {
-        margin-left: 0%;
+.card.p-3 {
+    background-color: #dedede;
+    color: black;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+@media (min-width:768px) {    
+    .carousel-inner img {
         width: 100%;
+        max-height: 460px;
+    }
+
+    .carousel-inner{
+    height: 400px;
     }
 }
 
-@keyframes efecto-entrada2 {
-    0% {
-        margin-right: 100%;
-        width: 300%;
-    }
-    100% {
-        margin-right: 0%;
-        width: 100%;
-    }
-}
-
-
-/* FOOTER */
-
-.footer {
-    background-color: #003566;
-    display: flex;
-    gap: 15px;
-    padding: 20px;
-    justify-content: space-between;
-    margin: 0;
-    align-items: center;
-    grid-column-start: -3;
-    grid-column-end: -1;
-    grid-row-start: -2;
-    grid-row-end: -1;
-}
-.redes {
-    display: flex;
-    gap: 15px;
+.link-style {
     text-decoration: none;
-    list-style: none;
-    align-content: center;
+    font-weight: bold;
 }
 
-.redes li a{
-    color: white;
-    text-decoration: none;
-    list-style: none;
+.boxMensaje  {
+    text-align: center;
+}
+#tituloContactanos  {
+    text-align: center;
+}
+.tituloVisitarnos {
+    text-align: center;
 }
 
-.redes li a:hover {
-    color: #ffc300;
+.textoDireccionHorarios {
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
 }
 
 
@@ -175,81 +104,177 @@
 
 
 
-    /*  HEADER  */
-   /*  .header-container { */
-   /*      background-color: #003566;
-        height: 100px;
-    }
-
-    .menu {
-        display: flex;
-        list-style: none;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .logoMenu {
-        display: flex;
-        align-content: center;
-        padding: 2px;
-    } */
-
-    /* .paginas {
-        display: flex;
-        gap: 15px;
-        padding: 20px;
-    }
-
-    .paginas li a {
-        color: white;
-        text-decoration: none;
-    }
-
-    .paginas li a:hover {
-        color: #ffc300;
-    } */
 
 
 
-    /* INTRO */
 
-    /* .intro {
-        background-color: #ffc300;
-        text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+    /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            } */
+
+
+            /* #003566 AZUL */
+            /* #ffc300 AMARILLO */
+
+
+        /* ESTRUCTURA DE LA PÁGINA*/
+
+        /* .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(3, auto);
+        } */
+
+        /* HEADER */
+
+        /* .base {
+            background-color: #003566;
+            display: flex;
+            gap: 15px;
+            padding: 20px;
+            justify-content: space-between;
+            margin: 0;
+            align-items: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
         }
-    .fotoIntro {
-        background-size: cover;
-    }
+        .paginas {
+            display: flex;
+            gap: 15px;
+            text-decoration: none;
+            list-style: none;
+            align-content: center;
+        }
 
-    .boxMensaje {
-        border-style: solid;
-    }
+        .paginas li a{
+            color: white;
+            text-decoration: none;
+            list-style: none;
+        }
 
-    .tituloVisitarnos {
-        border-style: dotted;
-    } */
+        .paginas li a:hover {
+            color: #ffc300;
+        } */
+
+        /* BODY INTRO*/
+
+        /* .intro {
+            background-color: #ffc300;
+            display: flex;
+            gap: 0px;
+            padding: 0px;
+            justify-content: center;
+            margin: 0;
+            align-items: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .botonSolicitarCotizacion {
+            display: flex;
+            justify-content: center;
+            animation: efecto-entrada2;
+            animation-duration: 1.5s;
+            animation-delay: 0s;
+
+        }
+
+        .fotoIntro {
+            justify-content: center;
+        }
+
+        .textoIntro {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            padding: 7px;
+        }
+
+        .boxAnimadoIntro {
+            animation-name: efecto-entrada;
+            animation-duration: 1.5s;
+            animation-delay: 0s;
+            background-color: #003566;
+            color: white;
+            text-align: center;
+            font-size: 25px;
+            padding: 5px;
+        } */
+
+        /* ANIMACIONES */
+
+        /* @keyframes efecto-entrada {
+            0% {
+                margin-left: 100%;
+                width: 300%;
+            }
+            100% {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+
+        @keyframes efecto-entrada2 {
+            0% {
+                margin-right: 100%;
+                width: 300%;
+            }
+            100% {
+                margin-right: 0%;
+                width: 100%;
+            }
+        } */
 
 
-    /*  FOOTER  */
-    /* #footer {
-        background-color: #003566;
-        height: 75px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+        /* FOOTER */
 
-    .derechosFooter {
-        color: white;
-        padding: 10px;
-    }
+        /* .footer {
+            background-color: #003566;
+            display: flex;
+            gap: 15px;
+            padding: 20px;
+            justify-content: space-between;
+            margin: 0;
+            align-items: center;
+            grid-column-start: -3;
+            grid-column-end: -1;
+            grid-row-start: -2;
+            grid-row-end: -1;
+        }
+        .redes {
+            display: flex;
+            gap: 15px;
+            text-decoration: none;
+            list-style: none;
+            align-content: center;
+        }
 
-    .footer a {
-        text-decoration: none;
-        color: white;
-        padding: 20px;
-    }
+        .redes li a{
+            color: white;
+            text-decoration: none;
+            list-style: none;
+        }
 
-    .footer a:hover {
-        color: rgb(233, 199, 78);
-    }  */
+        .redes li a:hover {
+            color: #ffc300;
+        } */

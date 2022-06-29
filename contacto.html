@@ -9,24 +9,41 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
     </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
 
 
-    <div class="grid-container">
-
-        <header class="base">
-            <img src="./RECURSOS/logoTecnyselec.png" alt="Logo Tecnyselec" width="200" height="75">
-            <nav  class="menu">     <!-- Comienza menú de navegación --> 
-                <ul class="paginas">
-                    <h3><li><a href="./index.html">Nosotros</a></li></h3>
-                    <h3><li><a href="./servicios.html">Servicios</a></li></h3>
-                    <h3><li><a href="./clientes.html">Clientes</a></li></h3>
-                    <h3><li><a href="./socios.html">Socios</a></li></h3>
-                    <h3><li><a href="./contacto.html">Contacto</a></li></h3>
-                </ul>
-            </nav>
-        </header>
+    <!-- Insertamos navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top bgNav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="./RECURSOS/logoTecnyselec.png" alt="logo-tecnyselec" width="175px" height=auto></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse alignTextNav navItems" id="navbarNav" >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item colorTextNav">
+                <a class="nav-link active" aria-current="page" href="./index.html">Nosotros</a>
+              </li>
+              <li class="nav-item colorTextNav">
+                <a class="nav-link" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item colorTextNav">
+                <a class="nav-link" href="./clientes.html">Clientes</a>
+              </li>
+              <li class="nav-item colorTextNav">
+                <a class="nav-link" href="./socios.html">Socios</a>
+              </li>
+              <li class="nav-item colorTextNav">
+                <a class="nav-link" href="./contacto.html">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- termina navbar -->
 
     <br>
 
@@ -83,9 +100,10 @@
     </div>
 
         <br>
-
+    <div class="textoDireccionHorarios">
         <p>Nos ubicamos en Av. José María Velazco 2613, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.</p>
         <p>Nuestros horarios son de 8:00 a.m. a 6:00 p.m</p>
+    </div>
 
         <br>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3364.1729916546105!2d-117.01578628483801!3d32.521526400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9484126237941%3A0x1e1bdb3817bab634!2sJos%C3%A9%20Mar%C3%ADa%20Velazco%202613%2C%20Zona%20Urbana%20Rio%20Tijuana%2C%2022010%20Tijuana%2C%20B.C.!5e0!3m2!1sen!2smx!4v1653725564293!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -96,17 +114,71 @@
 
     <br>
 
-    <footer class="footer"> <!-- Comienza pie de página -->
-        <img src="./RECURSOS/logoTecnyselec.png" alt="Logo Tecnyselec" width="200" height="75">
-        <nav class="menu">
-            <ul class="redes">
-                <li><a href="./contacto.html">Facebook</a></li>
-                <li><a href="./contacto.html">Instagram</a></li>
-                <li><a href="./contacto.html">Twitter</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+    <!-- insertamos un footer -->
+    <footer class="text-center text-black" style="background-color: #dedede">
+        <section class="mt-5">
+
+          <div class="row text-center d-flex justify-content-center pt-5">
+
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-dark link-style">Nosotros</a>
+              </h6>
+            </div>
+
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-dark link-style">Servicios</a>
+              </h6>
+            </div>
+
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-dark link-style">Clientes</a>
+              </h6>
+            </div>
+
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-dark link-style">Socios</a>
+              </h6>
+            </div>
+
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-dark link-style">Contacto</a>
+              </h6>
+            </div>
+          </div>
+        </section>
+  
+        <hr class="my-4" />
+  
+        <section class="redes text-center mb-3">
+            <ul>
+                <a href="https://www.facebook.com/" class="text-dark me-4 link-style">
+                    <i class="facebook">Facebook</i>
+                </a>
+                <a href="https://twitter.com/" class="text-dark me-4 link-style">
+                    <i class="twitter">Twitter</i>
+                </a>
+                <a href="https://www.instagram.com/" class="text-dark me-4 link-style">
+                    <i class="instagram">Instagram</i>
+                </a>
             </ul>
-        </nav>
-    </footer> <!-- Termina pie de página -->
+            </section>
+
+        <div
+            class="text-center p-4"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+            © 2022 Copyright:
+            <a class="text-white link-style" href="/TAREAS/tarea-4/tecnyselec-repositorio/index.html"
+            >Tecnyselec de México S. de R.L. de C.V.</a
+            >
+        </div>
+    </footer>
+    <!-- termina footer -->
 
 
 
@@ -114,6 +186,7 @@
 
 
 
-
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

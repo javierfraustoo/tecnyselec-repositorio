@@ -9,37 +9,134 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
     </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
 
-    <header class="base">
-        <img src="./RECURSOS/logoTecnyselec.png" alt="Logo Tecnyselec" width="200" height="75">
-        <nav  class="menu">     <!-- Comienza menú de navegación --> 
-            <ul class="paginas">
-                <h3><li><a href="./index.html">Nosotros</a></li></h3>
-                <h3><li><a href="./servicios.html">Servicios</a></li></h3>
-                <h3><li><a href="./clientes.html">Clientes</a></li></h3>
-                <h3><li><a href="./socios.html">Socios</a></li></h3>
-                <h3><li><a href="./contacto.html">Contacto</a></li></h3>
+    <!-- Insertamos navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top bgNav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="./RECURSOS/logoTecnyselec.png" alt="logo-tecnyselec" width="175px" height=auto></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse alignTextNav navItems" id="navbarNav" >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item colorTextNav">
+                <a class="nav-link active" aria-current="page" href="./index.html">Nosotros</a>
+              </li>
+              <li class="nav-item colorTextNav">
+                <a class="nav-link" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item colorTextNav">
+                <a class="nav-link" href="./clientes.html">Clientes</a>
+              </li>
+              <li class="nav-item colorTextNav">
+                <a class="nav-link" href="./socios.html">Socios</a>
+              </li>
+              <li class="nav-item colorTextNav">
+                <a class="nav-link" href="./contacto.html">Contáctanos</a>
+              </li>
             </ul>
-        </nav>
-    </header>
+          </div>
+        </div>
+    </nav>
+    <!-- termina navbar -->
 
     <br>    
     <br>
 
 
-    <footer class="footer"> <!-- Comienza pie de página -->
-        <img src="./RECURSOS/logoTecnyselec.png" alt="Logo Tecnyselec" width="200" height="75">
-        <nav class="menu">
-            <ul class="redes">
-                <li><a href="./contacto.html">Facebook</a></li>
-                <li><a href="./contacto.html">Instagram</a></li>
-                <li><a href="./contacto.html">Twitter</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </footer> <!-- Termina pie de página -->
+    <!-- insertamos un footer -->
+    <footer class="text-center text-black" style="background-color: #dedede">
+        <section class="mt-5">
 
+          <div class="row text-center d-flex justify-content-center pt-5">
+
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-dark link-style">Nosotros</a>
+              </h6>
+            </div>
+
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-dark link-style">Servicios</a>
+              </h6>
+            </div>
+
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-dark link-style">Clientes</a>
+              </h6>
+            </div>
+
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-dark link-style">Socios</a>
+              </h6>
+            </div>
+
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-dark link-style">Contacto</a>
+              </h6>
+            </div>
+          </div>
+        </section>
+  
+        <hr class="my-4" />
+  
+        <section class="mb-3">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p>
+                Dirección
+              </p>  
+              <p>
+                Nos ubicamos en Av. José María Velazco 2613, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.
+              </p>
+              <p>
+                Horarios
+              </p>
+              <p>
+                Lunes a Viernes 8:00 a.m. a 6:00 p.m
+              </p>
+              <p>
+                Sábados 10:00 a.m. a 3 p.m.
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <section class="redes text-center mb-3">
+            <ul>
+                <a href="https://www.facebook.com/" class="text-dark me-4 link-style">
+                    <i class="facebook">Facebook</i>
+                </a>
+                <a href="https://twitter.com/" class="text-dark me-4 link-style">
+                    <i class="twitter">Twitter</i>
+                </a>
+                <a href="https://www.instagram.com/" class="text-dark me-4 link-style">
+                    <i class="instagram">Instagram</i>
+                </a>
+            </ul>
+            </section>
+
+        <div
+            class="text-center p-4"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+            © 2022 Copyright:
+            <a class="text-white link-style" href="/TAREAS/tarea-4/tecnyselec-repositorio/index.html"
+            >Tecnyselec de México S. de R.L. de C.V.</a
+            >
+        </div>
+    </footer>
+    <!-- termina footer -->
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

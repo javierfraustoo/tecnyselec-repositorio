@@ -7,51 +7,256 @@
     <title>Tecnyselec Estacionamientos</title>
     <link rel="stylesheet" href="./STYLE/style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tiro+Bangla&display=swap');
-    </style>
-    <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-   
-    </head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
 
 <body>
 
-    <div class="grid-container">
 
-        <header class="base">
-            <a href="./index.html"><img src="./RECURSOS/logoTecnyselec.png" alt="logoTecnyselec" width = 200px height = 75px></a>
-            <nav  class="menu">     <!-- Comienza menú de navegación --> 
-                <ul class="paginas">
-                    <h3><li><a href="./index.html">Nosotros</a></li></h3>
-                    <h3><li><a href="./servicios.html">Servicios</a></li></h3>
-                    <h3><li><a href="./clientes.html">Clientes</a></li></h3>
-                    <h3><li><a href="./socios.html">Socios</a></li></h3>
-                    <h3><li><a href="./contacto.html">Contacto</a></li></h3>
-                </ul>
-            </nav>
-        </header>
+    <!-- Insertamos navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top bgNav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="./RECURSOS/logoTecnyselec.png" alt="logo-tecnyselec" width="175px" height=auto></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse alignTextNav navItems" id="navbarNav" >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item colorTextNav">
+                <a class="nav-link active" aria-current="page" href="./index.html">Nosotros</a>
+              </li>
+              <li class="nav-item colorTextNav">
+                <a class="nav-link" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item colorTextNav">
+                <a class="nav-link" href="./clientes.html">Clientes</a>
+              </li>
+              <li class="nav-item colorTextNav">
+                <a class="nav-link" href="./socios.html">Socios</a>
+              </li>
+              <li class="nav-item colorTextNav">
+                <a class="nav-link" href="./contacto.html">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- termina navbar -->
 
-        <section class="intro">
-            <div class="introGridContainer">
-                <div class="fotoIntro">
-                    <img src="./RECURSOS/fotoIntro.png" alt="Foto Intro", width="100%">
-                <div class="boxAnimadoIntro">
-                    <h2>Somos líderes en soluciones integrales de tecnología y asesoría en proyectos de estacionamiento.</h2>
-                </div>
-                <div class="textoIntro">
-                    <h3>Gracias a nuestro gran equipo y experiencia, hemos entregado soluciones a empresas privadas, centros comericales, Pymes, dependencias de gobierno en el noroeste del país por más de 20 años.</h3>
-                </div>
-                <br>
-                <div class="botonSolicitarCotizacion">
-                    <a href="./contacto.html"><img src="./RECURSOS/solicitaUnaCotizacion.png" alt="Boton Solicitar Cotizacion"></a>
-                </div>
-                <br>
+
+    <!-- Insertamos Carousel -->
+    <div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-        </section>
+            <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+                <img src="./RECURSOS/fotoIntro1.png" class="d-block w-100" alt="fotoIntro1" width="400px">
+                <div class="carousel-caption d-none d-block">
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./RECURSOS/fotoIntro2.png" class="d-block w-100" alt="fotoIntro2" width="400px">
+                <div class="carousel-caption d-none d-block">
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./RECURSOS/fotoIntro3.png" class="d-block w-100" alt="fotoIntro3" width="400px">
+                <div class="carousel-caption d-none d-block">
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- termina Carousel -->
 
-        <footer class="footer">
+
+    <!-- Insertamos Descripcion -->
+    <div class="quienesSomos">
+        <h1>¿Quiénes somos?</h1>
+        <p>
+            Líderes en soluciones integrales de tecnología y asesoría en proyectos de estacionamiento.
+            Gracias a nuestro equipo y experiencia, hemos entregado soluciones a empresas privadas, centros comericales, dependencias de gobierno en el noroeste del país por más de 20 años.
+        </p>
+    </div>
+    <!-- termina Descripcion -->
+
+
+    <!-- Insertamos Cards -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card text-center p-3">
+            <div class="card-body">
+              <h5 class="card-title">Misión</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore vel corrupti nostrum animi, rem laboriosam explicabo provident aut. Optio, debitis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center p-3">
+            <div class="card-body">
+              <h5 class="card-title">Visión</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis libero recusandae eligendi nostrum quas eum tempora dolor similique magna.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center p-3">
+            <div class="card-body">
+              <h5 class="card-title">Valores</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, maiores rerum. Porro commodi officia nam excepturi? Recusandae hic ut similique! mag.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- termina Cards -->
+
+
+    <!-- insertamos un footer -->
+    <footer class="text-center text-black" style="background-color: #dedede">
+        <section class="mt-5">
+
+          <div class="row text-center d-flex justify-content-center pt-5">
+
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-dark link-style">Nosotros</a>
+              </h6>
+            </div>
+
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-dark link-style">Servicios</a>
+              </h6>
+            </div>
+
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-dark link-style">Clientes</a>
+              </h6>
+            </div>
+
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-dark link-style">Socios</a>
+              </h6>
+            </div>
+
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-dark link-style">Contacto</a>
+              </h6>
+            </div>
+          </div>
+        </section>
+  
+        <hr class="my-4" />
+  
+        <section class="mb-3">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p>
+                Dirección
+              </p>  
+              <p>
+                Nos ubicamos en Av. José María Velazco 2613, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.
+              </p>
+              <p>
+                Horarios
+              </p>
+              <p>
+                Lunes a Viernes 8:00 a.m. a 6:00 p.m
+              </p>
+              <p>
+                Sábados 10:00 a.m. a 3 p.m.
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <section class="redes text-center mb-3">
+            <ul>
+                <a href="https://www.facebook.com/" class="text-dark me-4 link-style">
+                    <i class="facebook">Facebook</i>
+                </a>
+                <a href="https://twitter.com/" class="text-dark me-4 link-style">
+                    <i class="twitter">Twitter</i>
+                </a>
+                <a href="https://www.instagram.com/" class="text-dark me-4 link-style">
+                    <i class="instagram">Instagram</i>
+                </a>
+            </ul>
+            </section>
+
+        <div
+            class="text-center p-4"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+            © 2022 Copyright:
+            <a class="text-white link-style" href="/TAREAS/tarea-4/tecnyselec-repositorio/index.html"
+            >Tecnyselec de México S. de R.L. de C.V.</a
+            >
+        </div>
+    </footer>
+    <!-- termina footer -->
+
+
+
+
+
+
+
+
+    <div> <!-- código html-css normal/viejo (no Bootstrap) -->
+
+                <!--     <div class="grid-container">
+                    
+                    <header class="base">
+                        <a href="./index.html"><img src="./RECURSOS/logoTecnyselec.png" alt="logoTecnyselec" width = 200px height = 75px></a>
+                        <nav  class="menu">
+                            <ul class="paginas">
+                                <h3><li><a href="./index.html">Nosotros</a></li></h3>
+                                <h3><li><a href="./servicios.html">Servicios</a></li></h3>
+                                <h3><li><a href="./clientes.html">Clientes</a></li></h3>
+                                <h3><li><a href="./socios.html">Socios</a></li></h3>
+                                <h3><li><a href="./contacto.html">Contacto</a></li></h3>
+                            </ul>
+                        </nav>
+                    </header> -->
+                    
+                    <!--         <section class="intro">
+                        <div class="introGridContainer">
+                            <div class="fotoIntro">
+                                <img src="./RECURSOS/fotoIntro.png" alt="Foto Intro", width="100%">
+                                <div class="boxAnimadoIntro">
+                                    <h2>Somos líderes en soluciones integrales de tecnología y asesoría en proyectos de estacionamiento.</h2>
+                                </div>
+                                <div class="textoIntro">
+                                    <h3>Gracias a nuestro gran equipo y experiencia, hemos entregado soluciones a empresas privadas, centros comericales, Pymes, dependencias de gobierno en el noroeste del país por más de 20 años.</h3>
+                                </div>
+                        <br>
+                        <div class="botonSolicitarCotizacion">
+                            <a href="./contacto.html"><img src="./RECURSOS/solicitaUnaCotizacion.png" alt="Boton Solicitar Cotizacion"></a>
+                        </div>
+                        <br>
+                    </div>
+                </section> -->
+                
+        <!--         <footer class="footer">
             <a href="./index.html"><img src="./RECURSOS/logoTecnyselec.png" alt="logoTecnyselec" width = 200px height = 75px></a>
             <nav class="menu">
                 <ul class="redes">
@@ -62,7 +267,12 @@
                 </ul>
             </nav>
         </footer>
-    </div>    
+        </div>   -->  
+    </div>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
 
