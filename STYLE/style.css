@@ -1,3 +1,7 @@
+
+
+/* BODY PAGS EN GENERAL */
+
 * {
     font-family: 'Poppins';
     padding: 0;
@@ -7,6 +11,11 @@
 body {
     background-color: white;
 }
+
+
+
+
+/* HEADERS */
 
 .bgNav {
     background-color: #dedede;
@@ -20,6 +29,30 @@ body {
 
 .alignTextNav ul li{
     text-align: center;
+}
+
+
+
+
+/* FOOTERS */
+
+.link-style {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* INDEX.HTML */
+
+@media (min-width:768px) {    
+    .carousel-inner img {
+        width: 100%;
+        max-height: 460px;
+    }
+
+    .carousel-inner{
+    height: 400px;
+    }
 }
 
 .quienesSomos {
@@ -36,14 +69,24 @@ body {
     font-size: 40px;
 }
 
+
+
+
+/* SERVICIOS.HTML */
+
 .row {
     padding: 2%;
-    margin: 10px;
+    width: 100%;
+    height: auto;
 }
 
 .card.p-3 {
     background-color: #dedede;
     color: black;
+}
+
+.card4 img {
+    width: 260px;
 }
 
 .card-title {
@@ -52,22 +95,11 @@ body {
 }
 
 
-@media (min-width:768px) {    
-    .carousel-inner img {
-        width: 100%;
-        max-height: 460px;
-    }
 
-    .carousel-inner{
-    height: 400px;
-    }
-}
 
-.link-style {
-    text-decoration: none;
-    font-weight: bold;
-}
 
+
+/* CONTACTO.HTML */
 .boxMensaje  {
     text-align: center;
 }
@@ -86,6 +118,8 @@ iframe {
     width: 100%;
     height: 250px;
 }
+
+
 
 
 
