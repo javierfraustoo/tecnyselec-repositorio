@@ -26,6 +26,11 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
+.colorTextNav a:hover {
+    text-shadow: 0 0 2px #040466;
+    
+}
+
 
 .alignTextNav ul li{
     text-align: center;
@@ -40,7 +45,6 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
-
 
 /* INDEX.HTML */
 
@@ -119,13 +123,41 @@ body {
     background-color: #dedede;
 }
 
+.card-text
+.card.card-title {
+    overflow-wrap: normal;
+    
+}
+
+/* CLIENTES.HTML */
+
+.containerTituloClientes {
+    padding: 2%;
+}
+
+.containerTituloClientes h1 {
+    padding: 0;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.tituloServicios {
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 55px;
+}
+
+
 
 /* CONTACTO.HTML */
 .boxMensaje  {
     text-align: center;
 }
-#tituloContactanos  {
+#tituloContactanos {
     text-align: center;
+    font-weight: bold;
 }
 .tituloVisitarnos {
     text-align: center;
