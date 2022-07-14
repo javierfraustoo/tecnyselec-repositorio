@@ -1,7 +1,7 @@
 .bgNav {
     background-color: $colorBase;
     .colorTextNav a {
-        color: black;
+        color: map-get($map: $paleta, $key: 'oscuro');
         font-size: 20px;
         font-weight: bold;
         .colorTextNav a:hover {

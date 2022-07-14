@@ -65,15 +65,10 @@ body {
     background-color: #dedede;
     color: black;
     overflow-wrap: normal;
-}
+    }
 .card-title {
     font-weight: bold;
     font-size: 25px;
-}
-
-.row {
-    padding: 0;
-    height: auto;
 }
 
 

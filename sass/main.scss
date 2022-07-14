@@ -6,3 +6,22 @@
 
 
 
+@mixin cuadrosMVV ($pad:0, $ancho:auto) {
+    .row {
+        padding: $pad;
+        height: $ancho;
+        }
+    }
+    
+
+.columna-1 {
+    @include cuadrosMVV()
+}
+
+.columna-2 {
+    @include cuadrosMVV()
+}
+
+.columna-3 {
+    @include cuadrosMVV()
+}
